@@ -1,6 +1,7 @@
 module Main exposing (..)
 
 import Day1
+import Day2
 import Html exposing (Html, div, h1, h2, li, ol, p, span, text, ul)
 import Html.Attributes exposing (style)
 
@@ -13,7 +14,10 @@ type alias Solution =
 
 allSolutions : List Solution
 allSolutions =
-    [ Solution Day1.heading Day1.solutions ]
+    [ Solution Day1.heading Day1.solutions
+    , Solution Day2.heading Day2.solutions
+    ]
+
 
 
 

@@ -1,4 +1,14 @@
-module Util exposing (parseIntList)
+module Util exposing (parseIntList, splitTwo)
+
+splitTwo : String -> String -> ( String, String )
+splitTwo separator string =
+    case String.split separator string of
+        first :: last :: rest ->
+            ( first, last )
+
+        _ ->
+            ( "", "" )
+
 
 parseIntList : List Int -> List String -> List Int
 parseIntList intList stringList =
