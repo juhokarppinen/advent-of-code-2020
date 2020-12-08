@@ -2,6 +2,7 @@ module Main exposing (..)
 
 import Day1
 import Day2
+import Day3
 import Html exposing (Html, div, h1, h2, li, ol, p, span, text, ul)
 import Html.Attributes exposing (style)
 
@@ -16,6 +17,7 @@ allSolutions : List Solution
 allSolutions =
     [ Solution Day1.heading Day1.solutions
     , Solution Day2.heading Day2.solutions
+    , Solution Day3.heading Day3.solutions
     ]
 
 
