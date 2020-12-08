@@ -4,6 +4,7 @@ import Day1
 import Day2
 import Day3
 import Day4
+import Day5
 import Html exposing (Html, div, h1, h2, li, ol, p, span, text, ul)
 import Html.Attributes exposing (style)
 
@@ -20,6 +21,7 @@ allSolutions =
     , Solution Day2.heading Day2.solutions
     , Solution Day3.heading Day3.solutions
     , Solution Day4.heading Day4.solutions
+    , Solution Day5.heading Day5.solutions
     ]
 
 
