@@ -1,4 +1,5 @@
-module Util exposing (parseIntList, splitTwo)
+module Util exposing (countChars, parseIntList, splitTwo, toInt)
+
 
 splitTwo : String -> String -> ( String, String )
 splitTwo separator string =
@@ -25,3 +26,16 @@ parseIntList intList stringList =
                     parseIntList (List.append intList [ value ]) xs
 
 
+countChars : String -> String -> Int
+countChars char string =
+    String.length string - String.length (String.replace char "" string)
+
+
+toInt : String -> Int
+toInt s =
+    case String.toInt s of
+        Nothing ->
+            0
+
+        Just value ->
+            value
