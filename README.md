@@ -2,19 +2,13 @@
 
 ## How to run
 
-1. Install Elm from https://guide.elm-lang.org/install/elm.html
-
-2. Clone the repository:
 ```bash
 git clone git@github.com:juhokarppinen/advent-of-code-2020.git
+npm install
+npm start
 ```
 
-3. Start Elm Reactor
-```bash
-elm reactor
-```
-
-4. Open http://localhost:8000/src/Main.elm in your preferred browser
+Once the development server is running, open http://localhost:8000 in your preferred browser to see the results.
 
 
 ## Using custom test input
